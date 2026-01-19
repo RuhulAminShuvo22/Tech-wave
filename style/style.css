@@ -238,62 +238,96 @@ body{
 }
 
 /* choose tech wave */
-.techwave{
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 40px;
-    /* border: 2px solid #2f7cff; */
+/* ===== TechWave Section ===== */
+.techwave {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px;
 }
-.section-title{
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
-    /* border: 1px dashed #2f7cff; */
-    padding: 12px;
-    color: #FFFFFF;
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #ffffff;
 }
-.feature-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+
+/* Grid Layout */
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-areas:
+    "audio mobile"
+    "audio global"
+    "interview resource";
+  gap: 25px;
 }
-.feature-card{
-    background: #2a135f;
-    padding: 30px;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    transition: 0.3s ease;
+
+/* Feature Card */
+.feature-card {
+  background: #2a135f;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 0.3s ease;
 }
-.feature-card.large{
-    grid-column: span 2;
+
+/* Grid Areas */
+.feature-card.audio {
+  grid-area: audio;
 }
-.feature-card:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+.feature-card.mobile {
+  grid-area: mobile;
 }
-.icon-box{
-    width: 55px;
-    height: 55px;
-    background: #3b1b7a;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.feature-card.global {
+  grid-area: global;
 }
-.icon-box img{
-    width: 28px;
-    height: 28px;
+
+.feature-card.interview {
+  grid-area: interview;
 }
-.feature-card h3{
-    font-size: 20px;
-    color: #FFFFFF;
+
+.feature-card.resource {
+  grid-area: resource;
 }
-.feature-card p{
-    font-size: 14px;
-    line-height: 1.6;
-    color: #d6d6e7;
+
+/* Hover Effect */
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Icon Box */
+.icon-box {
+  width: 55px;
+  height: 55px;
+  background: #3b1b7a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Card Text */
+.feature-card h3 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.feature-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d6d6e7;
 }
 
 
@@ -384,14 +418,15 @@ body{
   }
 
   /* choose tech wave section */
-  .feature-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .feature-card.large{
-        grid-column: span 1;
-    }
-
+    .feature-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "audio"
+      "mobile"
+      "global"
+      "interview"
+      "resource";
+  }
 
 
 }
