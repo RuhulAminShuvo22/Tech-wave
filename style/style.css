@@ -330,6 +330,75 @@ body{
   color: #d6d6e7;
 }
 
+/* Featured Episodes */
+
+.featured {
+  padding: 50px;
+}
+
+.featured h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+}
+
+.card-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1a0c3a;
+  border-radius: 20px;
+  padding: 16px;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.video-box {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.video-box iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #cfcfcf;
+  line-height: 1.5;
+}
+
+.time {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #32ff7e;
+}
+
+
 
 
 
@@ -426,6 +495,10 @@ body{
       "global"
       "interview"
       "resource";
+  }
+  .card-row {
+    flex-direction: column;
+    align-items: center;
   }
 
 
