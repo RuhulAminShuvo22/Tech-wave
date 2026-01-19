@@ -2,5 +2,108 @@
 .font-inter{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background:  #1A0B2E;
+}
+
+/* header part css start */
+.header {
+  width: 100%;
+  background-color: #1A0B2E;
+  box-sizing: border-box;
+  padding-top: 30px;
+
+} 
+.navbar{
+    width: 79%;
+    max-width: 1600px;
+    border: 3px solid white;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo img{
+    width: 140px;
+    height: 60px;
+    cursor: pointer;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  cursor: pointer;
+}
+.nav-links a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.nav-links a:hover{
+  color: tomato;
+}
+.subscribe-btn{
+  padding: 12.5px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px ;
+  background: linear-gradient(
+    90deg,
+    #ffeb3b,
+    #ff2bbf,
+    #7a00ff
+  );
+  background-size: 200% 200%;
+  box-shadow:
+    0 0 20px rgba(255, 43, 191, 0.6),
+    0 0 40px rgba(122, 0, 255, 0.4);
+
+  animation: gradientMove 4s ease infinite;
+  transition: transform 0.3s ease;
+}
+.subscribe-btn:hover{
+  transform: scale(1.08);
+}
+/* animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 576px){
+
+  .navbar{
+    padding: 14px 20px;
+  }
+
+  /* Hide menu & button */
+  .nav-links,
+  .subscribe-btn{
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger{
+    display: block;
+  }
+
+}
+
+
+
