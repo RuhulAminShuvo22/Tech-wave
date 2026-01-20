@@ -239,14 +239,14 @@ body{
 
 /* choose tech wave */
 
-.techwave {
+.techwave{
   max-width: 1200px;
   margin: 80px auto;
   padding: 40px;
 }
 
 /* Section Title */
-.section-title {
+.section-title{
   text-align: center;
   font-size: 32px;
   margin-bottom: 50px;
@@ -254,7 +254,7 @@ body{
 }
 
 /* Grid Layout */
-.feature-grid {
+.feature-grid{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   grid-template-areas:
@@ -265,7 +265,7 @@ body{
 }
 
 /* Feature Card */
-.feature-card {
+.feature-card{
   background: #2a135f;
   padding: 30px;
   border-radius: 16px;
@@ -276,19 +276,19 @@ body{
 }
 
 /* Grid Areas */
-.feature-card.audio {
+.feature-card.audio{
   grid-area: audio;
 }
 
-.feature-card.mobile {
+.feature-card.mobile{
   grid-area: mobile;
 }
 
-.feature-card.global {
+.feature-card.global{
   grid-area: global;
 }
 
-.feature-card.interview {
+.feature-card.interview{
   grid-area: interview;
 }
 
@@ -351,6 +351,7 @@ body{
 }
 
 .card {
+  
   background: #1a0c3a;
   border-radius: 20px;
   padding: 16px;
@@ -381,6 +382,7 @@ body{
 }
 
 .card h3 {
+  color: #FFFFFF;
   font-size: 18px;
   margin: 8px 0;
 }
@@ -412,9 +414,7 @@ body{
   margin-bottom: 45px;
 }
 
-/* ========================
-   HOST CARD
-======================== */
+
 .host-card {
   background: linear-gradient(135deg, #2a0a4a, #1e0836);
   border-radius: 26px;
@@ -434,9 +434,6 @@ body{
   /* border: 4px solid #6d28d9; */
 }
 
-/* ========================
-   CONTENT
-======================== */
 .host-content h2 {
   color: #FFFFFF;
   font-size: 30px;
@@ -450,9 +447,7 @@ body{
   max-width: 896px;
 }
 
-/* ========================
-   SOCIAL ICONS (IMAGE BASED)
-======================== */
+
 .social-icons {
   margin-top: 22px;
   display: flex;
@@ -573,17 +568,6 @@ body{
   font-size: 0.8rem;
   opacity: 0.75;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
