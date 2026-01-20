@@ -238,7 +238,7 @@ body{
 }
 
 /* choose tech wave */
-/* ===== TechWave Section ===== */
+
 .techwave {
   max-width: 1200px;
   margin: 80px auto;
@@ -481,6 +481,100 @@ body{
   transform: translateY(-4px);
 }
 
+/* Footer section start */
+.newtechwave {
+  width: 100%;
+  position: relative;
+  min-height: 300px;
+  color: #FFFFFF;
+
+  background-image: url("../assets/footer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.newtechwave-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(20, 5, 40, 0.35),
+    rgba(20, 5, 40, 0.55),
+    rgba(20, 5, 40, 0.35)
+  );
+}
+
+.newtechwave-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.newtechwave-logo {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.newtechwave-logo span {
+  background: linear-gradient(
+    45deg,
+    #ffeb3b,
+    #ff2bbf,
+    #7a00ff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.newtechwave-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.newtechwave-icons a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.newtechwave-icons a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Icon Images */
+.newtechwave-icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.newtechwave-copyright {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+
 
 
 
@@ -606,6 +700,29 @@ body{
 
   .social-icons {
     justify-content: center;
+  }
+
+  /* footer part */
+  .newtechwave {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .newtechwave-logo {
+    font-size: 2.2rem;
+  }
+
+  .newtechwave-icons {
+    gap: 14px;
+  }
+
+  .newtechwave-icons a {
+    font-size: 0.85rem;
+  }
+
+  .newtechwave-icons img {
+    width: 18px;
+    height: 18px;
   }
 
 
